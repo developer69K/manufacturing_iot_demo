@@ -1,0 +1,93 @@
+{
+  "type": "kafka",
+  "dataSchema": {
+    "dataSource": "fans_demo3",
+    "parser": {
+      "type": "string",
+      "parseSpec": {
+        "format": "json",
+        "timestampSpec": {
+          "column": "fan_timestamp",
+          "format": "millis"
+        },
+        "dimensionsSpec": {
+          "dimensions": [],
+          "dimensionExclusions": [
+            "timestamp",
+            "value"
+          ]
+        }
+      }
+    },
+    "metricsSpec": [
+      {
+        "name": "count",
+        "type": "count"
+      },
+      {
+        "name": "rpm_sum",
+        "fieldName": "rpm",
+        "type": "doubleSum"
+      },
+      {
+        "name": "rpm_min",
+        "fieldName": "rpm",
+        "type": "doubleMin"
+      },
+      {
+        "name": "rpm_max",
+        "fieldName": "rpm",
+        "type": "doubleMax"
+      },
+      {
+        "name": "xaccel_sum",
+        "fieldName": "xaccel",
+        "type": "doubleSum"
+      },
+      {
+        "name": "xaccel_min",
+        "fieldName": "xaccel",
+        "type": "doubleMin"
+      },
+      {
+        "name": "xaccel_max",
+        "fieldName": "xaccel",
+        "type": "doubleMax"
+      },
+      {
+        "name": "yaccel_sum",
+        "fieldName": "yaccel",
+        "type": "doubleSum"
+      },
+      {
+        "name": "yaccel_min",
+        "fieldName": "yaccel",
+        "type": "doubleMin"
+      },
+      {
+        "name": "yaccel_max",
+        "fieldName": "yaccel",
+        "type": "doubleMax"
+      }
+
+    ],
+    "granularitySpec": {
+      "type": "uniform",
+      "segmentGranularity": "HOUR",
+      "queryGranularity": "NONE"
+    }
+  },
+  "tuningConfig": {
+    "type": "kafka",
+    "maxRowsPerSegment": 5000000
+  },
+  "ioConfig": {
+    "topic": "fans_demo",
+    "consumerProperties": {
+      "bootstrap.servers": "m510-16c:6667"
+    },
+    "taskCount": 1,
+    "replicas": 1,
+    "taskDuration": "PT10M"
+  }
+}

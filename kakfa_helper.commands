@@ -1,0 +1,7 @@
+./kafka-topics.sh --create --zookeeper c3n1m710p:2181,c9n1m710p:2181,c18n1m710p:2181 --replication-factor 1 --partitions 1 --topic fans_demo
+
+./kafka-topics.sh --list --zookeeper c3n1m710p:2181,c9n1m710p:2181,c18n1m710p:2181
+
+./kafka-console-consumer.sh --zookeeper c3n1m710p:2181,c9n1m710p:2181,c18n1m710p:2181 --topic fans_demo --from-beginning
+
+./kafka-delete-records.sh --bootstrap-server m510-16c:6667 --offset-json-file j.json
