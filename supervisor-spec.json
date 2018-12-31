@@ -1,7 +1,7 @@
 {
   "type": "kafka",
   "dataSchema": {
-    "dataSource": "fans_demo3",
+    "dataSource": "fans_demo7",
     "parser": {
       "type": "string",
       "parseSpec": {
