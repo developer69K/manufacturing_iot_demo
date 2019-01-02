@@ -7,11 +7,11 @@ HDP with HDF are already setup on Linux nodes(s).
 
 You already have access to a Hortonworks Connected Data Platform environment (HDP and HDF). This can be accomplished in an automated fashion following this excellent article: 
     https://community.hortonworks.com/articles/218863/automate-deployment-of-hdp30hdf32-or-hdf32-standal.html  
-If you want to deploy your cluster from scratch, goto https://docs.hortonworks.com/ and following the instructions to install first, Ambari, and then HDP with HDF.
+If you want to deploy your cluster from scratch, goto https://docs.hortonworks.com/ and following the instructions to install first, Ambari, and then HDP with HDF.  These are open source stacks and can be downloaded for no charge.
 
 KEPServerEX is downloaded on a Windows server
 
-You can download KEPServerEX v6 and run for free for two hours at https://www.kepware.com/en-us/kepserverex-6-6-release/ 
+You can download KEPServerEX v6 and run for free at https://www.kepware.com/en-us/kepserverex-6-6-release/ 
 
 Whats in This Repository?  
 
