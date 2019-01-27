@@ -15,7 +15,9 @@ You can download KEPServerEX v6 and run for free at https://www.kepware.com/en-u
 
 Whats in This Repository?  
 
-Pre-build Nifi Flow (fans_demo_v7.xml), Tar file containing a dump of individual fan events (fans.tar.gz), Hive Create Table query (create_table_fans_demo7.sql), Druid Kafka Indexer spec (supervisor-spec.json), CURL start command (start_druid_kafka_indexer.sh).  In addition, other helpful sample commands and references are provided.  Follow the steps in this HCC article:  
+Pre-build Nifi Flow (fans_demo_v7.xml), Tar file containing a dump of individual fan events (fans.tar.gz), Hive Create Table query (create_table_fans_demo7.sql), Druid Kafka Indexer spec (supervisor-spec.json), CURL start command (start_druid_kafka_indexer.sh).  In addition, other helpful sample commands and references are provided.  
+
+Follow the steps in this HCC article:  
 
 Manufacturing IoT/Process Monitoring Demokit
 https://community.hortonworks.com/articles/232204/manufacturing-iotprocess-monitoring-demo.html
